@@ -1,8 +1,8 @@
 class ResourcesController < ApplicationController
-    before action :set_resource, only: [:show, :update, :destroy]
+    #before action :set_resource, only: [:show, :update, :destroy]
 
     def index
-        @resources = resource.all 
+        @resources = Resource.all 
         render json: @resources
     end
 
@@ -11,7 +11,7 @@ class ResourcesController < ApplicationController
     end
 
     def create
-        @resource = resource.new(resource_params)
+        @resource = Resource.create(resource_params)
 
         if @resource.save
             render json: @resource, status: :created, location: @resource 
@@ -25,7 +25,7 @@ class ResourcesController < ApplicationController
     end
 
     def set_resource
-        @resource = resource.find(params[:id])
+        @resource = Resource.find(params[:id])
     end
 
     def resource_params
