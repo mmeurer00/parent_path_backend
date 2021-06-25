@@ -13,10 +13,11 @@ class FavoritesController < ApplicationController
     # end
 
     def create
-        @favorite = @post_or_resource.favorites.build(favorite_params)
+        @user = User.find_by_id(params[:user_id])
+        @favorite = @user.favorites.build(favorite_params)
         
         if @favorite.save
-            render json: @favorite, status: :created, location: @favorite 
+            render json: @favorite, status: :created, location: '/users/1/favorites' 
         else
             render json: @favorite.errors, status: :unproccessable_entity
         end
@@ -29,7 +30,12 @@ class FavoritesController < ApplicationController
     private
 
     def set_post_or_resource
-        @post_or_resource = Post.find_by_id(params[:post_id]) || Resource.find_by_id(params[:resource_id])
+        if (Post.find_by_id(params[:post_id] == nil))
+            @post_or_resource = Resource.find_by_id(params[:resource_id])
+        else
+            @post_or_resource = Post.find_by_id(params[:post_id])
+        end
+    
     end
 
     def set_favorite

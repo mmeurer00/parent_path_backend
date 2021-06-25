@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   end
 
   resources :users do
-      resources :favorites, only: [:index]
+      resources :favorites, only: [:index, :create]
   end
 
 end
