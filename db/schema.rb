@@ -16,9 +16,9 @@ ActiveRecord::Schema.define(version: 2021_06_22_152716) do
   enable_extension "plpgsql"
 
   create_table "favorites", force: :cascade do |t|
-    t.bigint "post_id", null: false
+    t.bigint "post_id"
     t.bigint "user_id", null: false
-    t.bigint "resources_id", null: false
+    t.bigint "resources_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["post_id"], name: "index_favorites_on_post_id"
@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 2021_06_22_152716) do
     t.string "tag"
     t.string "content"
     t.string "link"
+    t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
