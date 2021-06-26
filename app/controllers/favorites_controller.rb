@@ -31,6 +31,7 @@ class FavoritesController < ApplicationController
 
     def set_post_or_resource
         if (Post.find_by_id(params[:post_id] == nil))
+           #binding.pry
             @post_or_resource = Resource.find_by_id(params[:resource_id])
         else
             @post_or_resource = Post.find_by_id(params[:post_id])

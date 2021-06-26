@@ -18,11 +18,11 @@ ActiveRecord::Schema.define(version: 2021_06_22_152716) do
   create_table "favorites", force: :cascade do |t|
     t.bigint "post_id"
     t.bigint "user_id", null: false
-    t.bigint "resources_id"
+    t.bigint "resource_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["post_id"], name: "index_favorites_on_post_id"
-    t.index ["resources_id"], name: "index_favorites_on_resources_id"
+    t.index ["resource_id"], name: "index_favorites_on_resource_id"
     t.index ["user_id"], name: "index_favorites_on_user_id"
   end
 
@@ -56,6 +56,6 @@ ActiveRecord::Schema.define(version: 2021_06_22_152716) do
   end
 
   add_foreign_key "favorites", "posts"
-  add_foreign_key "favorites", "resources", column: "resources_id"
+  add_foreign_key "favorites", "resources"
   add_foreign_key "favorites", "users"
 end
