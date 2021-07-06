@@ -54,7 +54,7 @@ Congrats 🎉 you can now find awesome family/child resources!
 
 Since this application was primarily made for educational purposes, anyone is welcome to contribute. Make sure any pull requests have meaningfully commit messages that accurately and completely describe any changes. Do not include any changes that are not in the commit message.
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/mmeurer00/parent_path. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/mmeurer00/parent_path_backend. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant code of conduct.
 
 
 ## <h2>License 🔗 </h2>
