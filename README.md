@@ -1,10 +1,10 @@
-## <h1>🌱 Parent Paths 📈</h1>
+## 👪 <h1> Parent Path  👶</h1>
 
- Parent Paths is a S.P.A (Single Page Application), allowing users to create and track campaigns, as well as track donations for them. The user may also donate to other campaigns. Parent Paths is a Ruby on Rails API, while [Parent Paths-Frontend](https://github.com/mmeurer00/parent_path-frontend) consitst of HTML, CSS, and JavaScript communicating with API.
+ Parent Paths is a React Redux application, allowing users to find resources, as well as make posts to notify other parents about resources/opportunities found for families. The user may save posts. Parent Path's Backend is a Ruby on Rails API, while [Parent Path's Frontend](https://github.com/mmeurer00/parent_path) consitst of HTML, CSS, and React.js, communicating with API.
 
 
 
-## <h2>Installation Instructions 📲</h2>
+## <h2> Installation Instructions 📲</h2>
 
 
 Users can access Parent Paths' **(backend)** by cloning this repository.
