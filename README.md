@@ -1,24 +1,68 @@
-# README
+## <h1>🌱 Parent Paths 📈</h1>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ Parent Paths is a S.P.A (Single Page Application), allowing users to create and track campaigns, as well as track donations for them. The user may also donate to other campaigns. Parent Paths is a Ruby on Rails API, while [Parent Paths-Frontend](https://github.com/mmeurer00/parent_path-frontend) consitst of HTML, CSS, and JavaScript communicating with API.
 
-Things you may want to cover:
 
-* Ruby version
 
-* System dependencies
+## <h2>Installation Instructions 📲</h2>
 
-* Configuration
 
-* Database creation
+Users can access Parent Paths' **(backend)** by cloning this repository.
 
-* Database initialization
+1. Scroll up and find the green "Code" button:
 
-* How to run the test suite
+2. Click it, and a tab should drop down including a github link (make sure to select the one under SSH).
 
-* Services (job queues, cache servers, search engines, etc.)
+3. Manually copy or click the clipboard icon to copy the link.
 
-* Deployment instructions
+4. In the user terminal enter 'git clone':
 
-* ...
+```
+user@Users-MacBook_Air % git clone [paste link]
+```
+
+5. Navigate to the parent_path file.
+```
+user@Users-MacBook_Air parent_path % 
+```
+6. Run 'bundle install', followed by 'rails db:migrate', and then 'rails db:sedd', in your terminal:
+```
+user@Users-MacBook_Air parent_path % bundle install
+
+user@Users-MacBook_Air parent_path % rails db:migrate
+
+user@Users-MacBook_Air parent_path % rails db:seed
+```
+7. Once inside parent_path run the program by typing 'rails s' in your terminal:
+```
+user@Users-MacBook_Air parent_path % rails s 
+```
+8. Finally click on the link following '* Listening on':
+```
+* Listening on http://localhost:3000/
+```
+(*run CTRL+C to exit*)
+
+Congrats 🎉 you can now find awesome family/child resources! 
+
+
+
+## <h2>Contributing 🥰 </h2> 
+
+
+Since this application was primarily made for educational purposes, anyone is welcome to contribute. Make sure any pull requests have meaningfully commit messages that accurately and completely describe any changes. Do not include any changes that are not in the commit message.
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/mmeurer00/parent_path. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant code of conduct.
+
+
+## <h2>License 🔗 </h2>
+
+
+
+[MIT](https://github.com/mmeurer00/parent_path/blob/main/LICENSE)
+
+
+## <h2>Code of Conduct ✌</h2>
+
+
+Everyone interacting in the Parent Paths' project’s codebases, issue trackers, posts and users are expected to follow the code of conduct.

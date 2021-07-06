@@ -38,6 +38,9 @@ class FavoritesController < ApplicationController
         end
     end
 
+    def already_liked
+        
+    end
 
     def set_favorite
         @favorite = Favorite.find_by_id(params[:id]) 
