@@ -61,7 +61,7 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/mmeure
 
 
 
-[MIT](https://github.com/mmeurer00/parent_path/blob/main/LICENSE)
+[MIT](https://github.com/mmeurer00/parent_path_backend/blob/main/LICENSE)
 
 
 ## <h2>Code of Conduct ✌</h2>
