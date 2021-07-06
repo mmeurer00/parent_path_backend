@@ -25,7 +25,7 @@ user@Users-MacBook_Air % git clone [paste link]
 ```
 user@Users-MacBook_Air parent_path % 
 ```
-6. Run 'bundle install', then 'rails db:create', followed by 'rails db:migrate', and then 'rails db:sedd', in your terminal:
+6. Run 'bundle install', 'rails db:create', 'rails db:migrate', followed by 'rails db:seed', in your terminal:
 ```
 user@Users-MacBook_Air parent_path % bundle install
 
